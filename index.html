@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<html>
+    <head>
+        <script type="text/javascript">
+            var number1 = parseFloat(prompt("Enter the first number:"));
+
+        
+            var number2 = parseFloat(prompt("Enter the second number:"));
+
+            
+            var operation = prompt("Enter an operation (+, -, *, /):");
+
+
+                switch (operation) {
+                    case "+":
+                        document.write(number1 + " + " + number2 +  " = " + (number1 + number2));
+                        break;
+                    case "-":
+                        document.write(number1 + " - " + number2 + " = " + (number1 - number2));
+                        break;
+                    case "*":
+                        document.write(number1 + " * " + number2 + " = " + (number1 * number2));
+                        break;
+                    case "/":
+                    if (number2 == 0) {
+                            document.write("Division by zero is not possible.");
+                        } else {
+                            document.write(number1 + " / " + number2 + " = " + (number1 / number2));
+                        }
+                        break;
+                    default:
+                        document.write("Invalid operation. Please enter +, -, *, or /.");
+                }
+            
+        </script>
+    </head>
+</html>
